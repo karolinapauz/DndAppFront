@@ -1,0 +1,17 @@
+<div class="container col-md-4">
+    <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Username</label>
+          <input type="text" [(ngModel)]="firstname" class="form-control" id="firstname" name="firstname" placeholder="Username">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" [(ngModel)]="password" class="form-control" id="password" name="password" placeholder="Password">
+        </div>
+        <!-- <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div> -->
+        <input type="submit" class="fadeIn fourth" value="Log In" (click)="doLogin()">
+      </form>
+</div>
